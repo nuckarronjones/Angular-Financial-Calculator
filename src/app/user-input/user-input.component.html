@@ -1,0 +1,31 @@
+<form (submit)="submitUserInputs($event)">
+    <!-- First row of inputs -->
+    <div class="input-group">
+      <div>
+        <label for="initialInvestment">Initial Investment</label>
+        <input type="text" id="initialInvestment" name="initialInvestment" placeholder="0" [(ngModel)]="initialInvestment">
+      </div>
+      <div>
+        <label for="annualInvestment">Annual Investment</label>
+        <input type="text" id="annualInvestment" name="annualInvestment" placeholder="0" [(ngModel)]="annualInvestment">
+      </div>
+    </div>
+  
+    <!-- Second row of inputs -->
+    <div class="input-group" style="margin-top: 1rem;">
+      <div>
+        <label for="expectedReturn">Expected Return</label>
+        <input type="text" id="expectedReturn" name="expectedReturn" placeholder="0" [(ngModel)]="expectedReturn">
+      </div>
+      <div>
+        <label for="duration">Duration</label>
+        <input type="text" id="duration" name="duration" placeholder="0" [(ngModel)]="duration">
+      </div>
+    </div>
+  
+    <!-- Submit button -->
+    <div style="margin-top: 1rem;">
+      <button type="submit">Calculate</button>
+    </div>
+  </form>
+  
